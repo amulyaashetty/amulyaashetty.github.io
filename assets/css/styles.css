@@ -401,8 +401,8 @@ a:hover {
 
 .about-container {
     display: grid;
-    grid-template-columns: 1fr 1.3fr;
-    gap: 3rem;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 4rem;
     align-items: flex-start;
 }
 
@@ -414,10 +414,11 @@ a:hover {
 .about-image img {
     width: 100%;
     height: auto;
-    border-radius: 12px;
+    border-radius: 16px;
     border: 1px solid var(--border-color);
     box-shadow: 0 20px 60px rgba(38, 208, 206, 0.15);
     transition: var(--transition);
+    object-fit: cover;
 }
 
 .about-image img:hover {
