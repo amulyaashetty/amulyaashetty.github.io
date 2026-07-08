@@ -399,6 +399,54 @@ a:hover {
     line-height: 1.8;
 }
 
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 3rem;
+    align-items: flex-start;
+}
+
+.about-image {
+    position: sticky;
+    top: 100px;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 20px 60px rgba(38, 208, 206, 0.15);
+    transition: var(--transition);
+}
+
+.about-image img:hover {
+    border-color: var(--accent-primary);
+    box-shadow: 0 24px 72px rgba(38, 208, 206, 0.25);
+}
+
+.about-content h2 {
+    margin-bottom: 1.5rem;
+    color: var(--accent-primary);
+}
+
+.about-content p {
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .about-image {
+        position: relative;
+        top: 0;
+    }
+}
+
 /* ========== EXPERIENCE/TIMELINE ========== */
 .timeline {
     position: relative;
